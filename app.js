@@ -10,7 +10,7 @@ function countDistinctWords(letters) {
 	// empty array of distinct words.
 	var distinctWords = [];
 	// iterations occur checking for repetition and distinct words are added to list.
-	for (var i=1; i < letters.length; i++) {
+	for (var i=0; i<letters.length; i++) {
 		if (distinctWords.indexof(letters[i]) === -1) {
 			distinctWords.push(letters[i]);
 		}
