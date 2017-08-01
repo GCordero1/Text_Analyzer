@@ -35,4 +35,16 @@ function reportOnText(text) {
 	textReport.removeClass('hidden');
 }
 
+function watchFormSubmission() {
+	$('.js-text-form').submit(function(event) {
+		event.preventDefault();
+		var userText = $(this).find('#user-text').val();
+		reportOnText(removeReturns(userText));
+	});
+}
+
+$(function() {
+	watchFormSubmission();
+});
+
 
